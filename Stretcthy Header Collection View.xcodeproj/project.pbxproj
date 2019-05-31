@@ -12,6 +12,10 @@
 		7F4AFF672278E27F0019CF8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4AFF652278E27F0019CF8E /* Main.storyboard */; };
 		7F4AFF692278E2810019CF8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F4AFF682278E2810019CF8E /* Assets.xcassets */; };
 		7F4AFF6C2278E2810019CF8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F4AFF6A2278E2810019CF8E /* LaunchScreen.storyboard */; };
+		7F4AFF742278E3AF0019CF8E /* StretchyHeaderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4AFF732278E3AF0019CF8E /* StretchyHeaderVC.swift */; };
+		7F4AFF76227906BE0019CF8E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4AFF75227906BE0019CF8E /* HeaderView.swift */; };
+		7FEFC8A4227EF303007A3D8E /* Extensions+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEFC8A3227EF303007A3D8E /* Extensions+UIView.swift */; };
+		7FEFC8A7227F01A8007A3D8E /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEFC8A6227F01A8007A3D8E /* StretchyHeaderLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		7F4AFF682278E2810019CF8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F4AFF6B2278E2810019CF8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F4AFF6D2278E2810019CF8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F4AFF732278E3AF0019CF8E /* StretchyHeaderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderVC.swift; sourceTree = "<group>"; };
+		7F4AFF75227906BE0019CF8E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		7FEFC8A3227EF303007A3D8E /* Extensions+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Extensions+UIView.swift"; path = "../../Auto Layout Extensions/Auto Layout Extensions/Extensions+UIView.swift"; sourceTree = "<group>"; };
+		7FEFC8A6227F01A8007A3D8E /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,26 @@
 		7F4AFF602278E27F0019CF8E /* Stretcthy Header Collection View */ = {
 			isa = PBXGroup;
 			children = (
+				7FEFC8A5227F0130007A3D8E /* Custom */,
 				7F4AFF612278E27F0019CF8E /* AppDelegate.swift */,
+				7F4AFF732278E3AF0019CF8E /* StretchyHeaderVC.swift */,
+				7F4AFF75227906BE0019CF8E /* HeaderView.swift */,
 				7F4AFF632278E27F0019CF8E /* ViewController.swift */,
+				7FEFC8A3227EF303007A3D8E /* Extensions+UIView.swift */,
 				7F4AFF652278E27F0019CF8E /* Main.storyboard */,
 				7F4AFF682278E2810019CF8E /* Assets.xcassets */,
 				7F4AFF6A2278E2810019CF8E /* LaunchScreen.storyboard */,
 				7F4AFF6D2278E2810019CF8E /* Info.plist */,
 			);
 			path = "Stretcthy Header Collection View";
+			sourceTree = "<group>";
+		};
+		7FEFC8A5227F0130007A3D8E /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				7FEFC8A6227F01A8007A3D8E /* StretchyHeaderLayout.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +155,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FEFC8A7227F01A8007A3D8E /* StretchyHeaderLayout.swift in Sources */,
 				7F4AFF642278E27F0019CF8E /* ViewController.swift in Sources */,
 				7F4AFF622278E27F0019CF8E /* AppDelegate.swift in Sources */,
+				7F4AFF742278E3AF0019CF8E /* StretchyHeaderVC.swift in Sources */,
+				7F4AFF76227906BE0019CF8E /* HeaderView.swift in Sources */,
+				7FEFC8A4227EF303007A3D8E /* Extensions+UIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +244,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -274,6 +299,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -283,6 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUHXR699G4;
 				INFOPLIST_FILE = "Stretcthy Header Collection View/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -290,6 +317,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ridolud.Stretcthy-Header-Collection-View";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +328,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UUHXR699G4;
 				INFOPLIST_FILE = "Stretcthy Header Collection View/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -307,6 +336,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ridolud.Stretcthy-Header-Collection-View";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
